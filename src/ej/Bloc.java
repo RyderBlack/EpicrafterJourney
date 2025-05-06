@@ -1,10 +1,10 @@
 package ej;
 
-public class Bloc {
+public abstract class Bloc {
 
-    private int task_ID;
-    private String task_name;
-    private String description;
+    protected int task_ID;
+    protected String task_name;
+    protected String description;
 
 
 
