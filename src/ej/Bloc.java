@@ -1,6 +1,6 @@
 package ej;
 
-public abstract class Bloc {
+public class Bloc {
 
     protected int task_ID;
     protected String task_name;

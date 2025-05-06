@@ -1,11 +1,16 @@
 package ej;
 
-public class CalcRect {
+public abstract class CalcRect {
 
-    private int width;
-    private int length;
-    private int height;
+    protected int width;
+    protected int length;
+    protected int height;
 
+    public CalcRect(final int width, final int length, final int height) {
+        this.width = width;
+        this.length = length;
+        this.height = height;
+    }
 
     // WIDTH
     public int getWidth() {
