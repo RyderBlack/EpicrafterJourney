@@ -6,6 +6,7 @@ public class Main {
 
         IBloc new_wall = new Wall(10, 10, 5, true);
         new_wall.displayDescription();
+        Rempart new_rempart = new Rempart(new_wall);
 
     }
 
