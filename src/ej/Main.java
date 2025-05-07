@@ -12,6 +12,13 @@ public class Main {
         System.out.println("The Planet " + earth.getName() + " has a surface of " + earth.surface() + " millions of km.");
         earth.displayPlanet();
 
+        Colors colorChoice = Colors.GREEN;
+        switch(colorChoice) {
+            case GREEN -> System.out.println("This is the Green color");
+            case BLUE -> System.out.println("This is the Blue color");
+            case RED -> System.out.println("This is the Red color");
+        }
+
     }
 
 }
