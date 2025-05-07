@@ -10,6 +10,7 @@ public class Main {
 
         var earth = new Planet("Earth", 40000.00, 510);
         System.out.println("The Planet " + earth.getName() + " has a surface of " + earth.surface() + " millions of km.");
+        earth.displayPlanet();
 
     }
 
