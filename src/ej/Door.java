@@ -11,4 +11,9 @@ public class Door extends Bloc{
     public boolean isLocked() {
         return isLocked;
     }
+
+    @Override
+    public void displayDescription() {
+        System.out.println("This a door");
+    }
 }

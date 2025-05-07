@@ -13,4 +13,8 @@ public class Wall extends Bloc {
         return !porteur;
     }
 
+    @Override
+    public void displayDescription() {
+        System.out.println("This a wall!");
+    }
 }
