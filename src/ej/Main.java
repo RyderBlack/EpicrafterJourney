@@ -36,6 +36,11 @@ public class Main {
             System.out.println(blocKey.getClass().getSimpleName() + ": " + quantity);
         }
 
+
+        // Kit
+        Kit starterKit = new Kit();
+        starterKit.displayKit();
+
     }
 
 }
