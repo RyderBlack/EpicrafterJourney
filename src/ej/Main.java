@@ -1,5 +1,8 @@
 package ej;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -19,6 +22,23 @@ public class Main {
             case RED -> System.out.println("This is the Red color");
         }
 
+
+
+        List<Integer> blocQuantityUsed= new ArrayList<Integer>();
+        blocQuantityUsed.add(1);
+        blocQuantityUsed.add(3);
+        blocQuantityUsed.add(1);
+
+        for(Integer quantity : blocQuantityUsed) {
+            System.out.println(quantity);
+        }
+
+        blocQuantityUsed.remove(Integer.valueOf(3));
+
     }
 
 }
+
+
+
+

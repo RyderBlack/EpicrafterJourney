@@ -17,3 +17,6 @@ public abstract class Bloc implements IBloc {
         this.color = color;
     }
 }
+
+
+
