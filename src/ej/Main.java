@@ -1,6 +1,9 @@
 package ej;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.Map;
+import java.util.Set;
 
 public class Main {
 
@@ -22,28 +25,15 @@ public class Main {
         }
 
 
-        // List collection
-        List<Integer> blocQuantityUsed= new ArrayList<Integer>();
-        blocQuantityUsed.add(1);
-        blocQuantityUsed.add(3);
-        blocQuantityUsed.add(1);
+        // Map
+        Map<Bloc, Integer> quantityBlocUsed = new HashMap<Bloc, Integer>();
+        quantityBlocUsed.put(new Wall(10, 10, 5, true), 4);
+        quantityBlocUsed.put(new Door(10, 10, 5, true), 1);
 
-        for(Integer quantity : blocQuantityUsed) {
-            System.out.println(quantity);
-        }
-
-        blocQuantityUsed.remove(Integer.valueOf(3));
-
-
-        // Set collection
-        Set<String> keywordUsed = new LinkedHashSet<String>();
-        keywordUsed.add("Java");
-        keywordUsed.add("Java"); // Not compiled since we're using Set !
-        keywordUsed.add("PHP");
-        keywordUsed.add("C++");
-
-        for(String keyword : keywordUsed) {
-            System.out.println(keyword);
+        Set<Bloc> blocKeys = quantityBlocUsed.keySet();
+        for(Bloc blocKey : blocKeys) {
+            Integer quantity = quantityBlocUsed.get(blocKey);
+            System.out.println(blocKey.getClass().getSimpleName() + ": " + quantity);
         }
 
     }
