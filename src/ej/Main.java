@@ -1,7 +1,6 @@
 package ej;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
 
 public class Main {
 
@@ -23,7 +22,7 @@ public class Main {
         }
 
 
-
+        // List collection
         List<Integer> blocQuantityUsed= new ArrayList<Integer>();
         blocQuantityUsed.add(1);
         blocQuantityUsed.add(3);
@@ -34,6 +33,18 @@ public class Main {
         }
 
         blocQuantityUsed.remove(Integer.valueOf(3));
+
+
+        // Set collection
+        Set<String> keywordUsed = new LinkedHashSet<String>();
+        keywordUsed.add("Java");
+        keywordUsed.add("Java"); // Not compiled since we're using Set !
+        keywordUsed.add("PHP");
+        keywordUsed.add("C++");
+
+        for(String keyword : keywordUsed) {
+            System.out.println(keyword);
+        }
 
     }
 
