@@ -1,9 +1,10 @@
 package ej;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.io.IOException;
+
 
 public class Main {
 
@@ -40,6 +41,17 @@ public class Main {
         // Kit
         Kit starterKit = new Kit();
         starterKit.displayKit();
+
+
+        FileManager fm = new FileManager("myfile.txt");
+
+        try {
+            fm.write("Hello, this is a test!");
+            System.out.println("File content:");
+            fm.read();
+        } catch (IOException e) {
+            System.out.println("Error during file reading or writing: " + e.getMessage());
+        }
 
     }
 
